@@ -9,7 +9,7 @@ st.subheader("IMF, 2021~2023, 총투자")  # https://kosis.kr/statHtml/statHtml.
 
 df = pd.read_csv('./data/Total_Investment_20230522224509.csv', index_col = 0)
 
-df['ASIA'] = df.iloc[[2:45], :]
+df["ASIA"] = df.iloc[[2:45], :]
 df['NORTH AMERICA'] = df.iloc[[46:49], :]
 df['SOUTH AMERICA'] = df.iloc[[50:79], :]
 df['EUROPE'] = df.iloc[[80:120], :]
