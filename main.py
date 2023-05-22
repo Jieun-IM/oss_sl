@@ -13,4 +13,6 @@ df.set_index = df['Country']
 if st.button('data copyright link'):
     st.write('https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_2WEO009&vw_cd=MT_RTITLE&list_id=R_SUB_OTITLE_OTIT_IMFTIT_001&scrId=&seqNo=&lang_mode=ko&obj_var_id=&itm_id=&conn_path=MT_RTITLE&path=%252FstatisticsList%252FstatisticsListIndex.do')
     
-    
+if st.checkbox('Show raw data'):
+    st.subheader('Raw data')
+    st.write(df)
