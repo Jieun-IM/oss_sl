@@ -15,4 +15,4 @@ if st.button('data copyright link'):
     
 if st.checkbox('Show raw data'):
     st.subheader('Raw data')
-    st.write(df.iloc[[0,1]])
+    st.write(df)
